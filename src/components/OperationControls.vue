@@ -1,8 +1,12 @@
 <template>
   <div id="operationControls" class="operation-controls">
-    <span>Operation type</span>
-    <SelectOperator></SelectOperator>
-    <Reset subject="operation"></Reset>
+    <span class="mr-2">Operation type</span>
+    <span class="mr-2">
+      <SelectOperator></SelectOperator>
+    </span>
+    <span>
+      <Reset subject="operation"></Reset>
+    </span>
   </div>
 </template>
 
@@ -19,6 +23,7 @@ export default {
 .operation-controls {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
 }
 </style>

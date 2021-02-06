@@ -1,6 +1,6 @@
 <template>
   <div id="historyDisplay" class="history-display">
-    <table>
+    <table class="table table-bordered table-hover">
       <thead>
         <tr>
           <td v-for="attribute in this.header" :key="attribute">
@@ -44,6 +44,10 @@ export default {
 .history-display {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+}
+.table td {
+  vertical-align: middle;
+  text-align: center;
 }
 </style>

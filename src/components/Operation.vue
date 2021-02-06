@@ -1,5 +1,5 @@
 <template>
-  <div id="operationContainer">
+  <div id="operationContainer" class="operation-container">
     <OperationControls></OperationControls>
     <OperationDisplay></OperationDisplay>
   </div>
@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style scoped>
-
+.operation-container {
+  margin-bottom: 50px;
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <h1><span><img src="./assets/logo.png" alt="Vue logo"></span>ue Calculator </h1>
+  <div id="app" class="container">
+    <h1><span><img src="./assets/logo.png" alt="Vue logo"></span>ue 2 Calculator </h1>
     <Operation></Operation>
     <History></History>
   </div>
@@ -23,7 +23,6 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }

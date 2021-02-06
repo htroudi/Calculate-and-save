@@ -1,6 +1,6 @@
 <template>
   <div id="selectOperator">
-    <label>
+    <label class="select-label">
       <select v-model="selected" v-on:change="onChange()">
         <option value="+" selected>Addition</option>
         <option value="-">Subtraction</option>
@@ -37,5 +37,7 @@ export default {
 </script>
 
 <style scoped>
-
+.select-label {
+  margin-bottom: 0;
+}
 </style>

@@ -1,11 +1,13 @@
 <template>
   <div id="operationDisplay" class="operation-display">
-    <InputOperand position="Left"></InputOperand>
-    <span class="operation-sign">{{this.$store.getters.operator}}</span>
-    <InputOperand position="Right"></InputOperand>
-    <span class="equals-sign">=</span>
-    <span class="result">{{this.$store.getters.result}}</span>
-    <save-button></save-button>
+    <div class="operation-display-inner">
+      <InputOperand position="Left"></InputOperand>
+      <span class="operation-sign mr-2 ml-2">{{this.$store.getters.operator}}</span>
+      <InputOperand position="Right"></InputOperand>
+      <span class="equals-sign mr-2 ml-2">=</span>
+      <span class="result mr-2">{{this.$store.getters.result}}</span>
+      <save-button></save-button>
+    </div>
   </div>
 </template>
 
@@ -20,8 +22,13 @@ export default {
 
 <style scoped>
 .operation-display {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px;
+}
+.operation-display-inner {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 </style>

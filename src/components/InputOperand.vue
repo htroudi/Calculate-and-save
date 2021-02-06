@@ -1,5 +1,5 @@
 <template>
-  <label>
+  <label class="input-label">
     <input type="number" v-model="number" v-on:input="onChange()">
   </label>
 </template>
@@ -38,5 +38,7 @@ export default {
 </script>
 
 <style scoped>
-
+.input-label {
+  margin-bottom: 0;
+}
 </style>

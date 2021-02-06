@@ -1,6 +1,6 @@
 <template>
   <div id="historyControls" class="history-controls">
-    <span>Favorites</span>
+    <span class="mr-2">Favorites</span>
     <Reset subject="history"></Reset>
   </div>
 </template>
@@ -17,6 +17,7 @@ name: "HistoryControls",
 .history-controls {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
 }
 </style>

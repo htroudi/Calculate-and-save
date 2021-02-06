@@ -1,6 +1,6 @@
 <template>
-  <div id="saveButton">
-    <button class="btn btn-success" v-on:click="save()">
+  <div id="saveButton" class="save-btn">
+    <button class="btn btn-outline-dark" v-on:click="save()">
       <span class="heart-icon"></span>
       <span>Save</span>
     </button>
@@ -22,6 +22,9 @@ export default {
 </script>
 
 <style scoped>
+.save-btn {
+  display: inline-block;
+}
 .btn {
   display: flex;
   align-items: center;
@@ -30,7 +33,9 @@ export default {
 .heart-icon {
   width: 20px;
   height: 20px;
-  background-color: green;
+  background-image: url("~@/assets/heart-solid.svg");
+  background-size: contain;
+  background-position: center;
   margin-right: 10px;
 }
 </style>

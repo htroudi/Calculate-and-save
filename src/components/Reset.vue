@@ -1,6 +1,6 @@
 <template>
-  <div id="resetButton">
-    <button class="btn btn-success" v-on:click="reset()">
+  <div id="resetButton" class="reset-btn">
+    <button class="btn btn-outline-dark" v-on:click="reset()">
       <span class="refresh-icon"></span>
       <span>Reset</span>
     </button>
@@ -37,6 +37,9 @@ export default {
 </script>
 
 <style scoped>
+.reset-btn {
+  display: inline-block;
+}
 .btn {
   display: flex;
   align-items: center;
@@ -45,7 +48,9 @@ export default {
 .refresh-icon {
   width: 20px;
   height: 20px;
-  background-color: red;
+  background-image: url("~@/assets/trash-alt-solid.svg");
+  background-size: contain;
+  background-position: center;
   margin-right: 10px;
 }
 </style>

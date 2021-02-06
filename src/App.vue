@@ -1,15 +1,18 @@
 <template>
   <div id="app">
-    <h1><span><img src="./assets/logo.png"></span>ue Calculator </h1>
+    <h1><span><img src="./assets/logo.png" alt="Vue logo"></span>ue Calculator </h1>
     <Operation></Operation>
+    <History></History>
   </div>
 </template>
 
 <script>
 import Operation from "@/components/Operation";
+import History from "@/components/History";
 export default {
   name: 'app',
   components: {
+    History,
     Operation,
   }
 }

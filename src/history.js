@@ -1,4 +1,5 @@
 import store from './store'
+import moment from 'moment'
 
 export default class History {
 
@@ -8,7 +9,7 @@ export default class History {
             operation: '',
             result: '',
         }
-        op.date = 'now';
+        op.date = moment().format('MM/DD/YYYY hh:mm');
         op.operation = store.getters.left + ' ' + store.getters.operator + ' ' +  store.getters.right;
         op.result = store.getters.result;
         store.commit("addContent", op);
